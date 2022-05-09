@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zap Fast</title>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="icon" href="https://www.pngitem.com/pimgs/m/534-5344258_comment-chat-message-icon-hd-png-download.png">
+</head>
+<body>
+    <div class="container">
+        <div class="card card-container">
+             <h3 id="init-msg">Login: </h3> 
+
+            <img class="logo" src="https://www.pngitem.com/pimgs/m/534-5344258_comment-chat-message-icon-hd-png-download.png" alt="Logo"/>
+            <p id="logo-name" class="logo-name"></p>
+            <form class="form-signin" action="/user/login" method="post">
+                <span id="reauth-email" class="reauth-email"></span>
+                <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Endereço de email" required autofocus>
+                <input type="password" name="senha" id="inputPassword" class="form-control" placeholder="Senha" required>
+                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Entrar</button>
+            </form>
+            <a href="register.html" class="login-register">
+                Cadastre-se já!
+            </a>
+        </div>
+    </div>
+</body>
+</html>

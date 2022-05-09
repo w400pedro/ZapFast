@@ -1,0 +1,480 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #BDBDBD;
+}
+
+.card-container.card {
+    max-width: 350px;
+    padding: 40px 40px;
+}
+
+.btn {
+    font-weight: 700;
+    height: 36px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+.role-h3{
+    display: inline; 
+    margin-left: 17%;
+}
+
+.card {
+    background-color: #F7F7F7;
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 10%;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#init-msg {
+    display: inline;
+    color: rgb(65, 63, 63);
+
+}
+
+.logo-name {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0 0;
+    min-height: 1em;
+}
+
+.reauth-email {
+    display: block;
+    color: #404040;
+    line-height: 2;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin #inputName,
+.form-signin #inputEmail,
+.form-signin #inputPassword,
+.form-signin #inputConfirmPassword {
+    direction: ltr;
+    height: 44px;
+    font-size: 16px;
+}
+
+.form-signin input[type=email],
+.form-signin input[type=password],
+.form-signin input[type=text],
+.form-signin input[type=date],
+.form-signin button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+    border-color: rgb(104, 145, 162);
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgb(104, 145, 162);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgb(104, 145, 162);
+}
+
+.btn.btn-signin {
+    background-color: rgb(104, 145, 162);
+    padding: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    height: 36px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    -o-transition: all 0.218s;
+    -moz-transition: all 0.218s;
+    -webkit-transition: all 0.218s;
+    transition: all 0.218s;
+}
+
+.btn.btn-signin:hover,
+.btn.btn-signin:active,
+.btn.btn-signin:focus {
+    background-color: rgb(12, 97, 33);
+}
+
+.login-register {
+    color: rgb(104, 145, 162);
+}
+
+.login-register:hover,
+.login-register:active,
+.login-register:focus {
+    color: rgb(12, 97, 33);
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+    border: black !important;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+.inbox_people {
+    background: #f8f8f8 none repeat scroll 0 0;
+    float: left;
+    overflow: hidden;
+    width: 40%;
+    border-right: 1px solid rgb(113, 113, 113);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.btn-enter {
+    padding-bottom: 10px !important;
+    font-size: 20px !important;
+    padding-top: 10px !important;
+}
+
+footer {
+
+    text-align: center;
+    font-size: 16px;
+}
+
+#main-table {
+    margin: auto;
+    border: black 1px solid;
+    background-color: whitesmoke;
+    width: 80%;
+    min-height: 150px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn-delete{
+    margin-right: 15px;
+    float: right;
+}
+
+.btn-exit{
+    position: absolute; 
+    float: left;
+}
+
+.mensagemh3{
+    display: inline;
+    color: gray;
+}
+
+th {
+    text-align: center !important;
+    padding: 20px !important;
+}
+
+.choose-group {
+    text-align: center;
+    text-shadow: black 1px 1px 2px;
+}
+
+.page-selected{
+    color: black;
+}
+
+td {
+    padding: 20px !important;
+}
+
+body {
+    background-image: linear-gradient(to top, rgb(189, 189, 189), rgb(233, 231, 231));
+}
+
+.inbox_msg {
+    border: 1px solid rgb(113, 113, 113);
+    clear: both;
+    overflow: hidden;
+    background-color: rgb(214, 212, 212);
+}
+
+.top_spac {
+    margin: 20px 0 0;
+}
+
+
+
+.recent_heading {
+    float: left;
+    width: 40%;
+}
+
+.headind_srch {
+    padding: 10px 29px 10px 20px;
+    overflow: hidden;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.recent_heading h4 {
+    color: #05728f;
+    font-size: 21px;
+    margin: auto;
+}
+
+.chat_ib h5 {
+    font-size: 15px;
+    color: #464646;
+    margin: 0 0 8px 0;
+}
+
+.chat_ib h5 span {
+    font-size: 13px;
+    float: right;
+}
+
+
+
+.chat-nav{
+    padding-top: 0; 
+    position: absolute; 
+    width: 40%;
+}
+
+.chat_ib p {
+    font-size: 14px;
+    color: #989898;
+    margin: auto
+}
+
+.chat_img {
+    float: left;
+    width: 11%;
+}
+
+.chat_ib {
+    float: left;
+    padding: 0 0 0 15px;
+    width: 88%;
+}
+
+.chat_people {
+    overflow: hidden;
+    clear: both;
+}
+
+.chat_list {
+    border-bottom: 1px solid #c4c4c4;
+    margin: 0;
+    padding: 18px 16px 10px;
+}
+
+.inbox_chat {
+    height: 79%;
+    overflow-y: scroll;
+}
+
+.active_chat {
+    background: #ebebeb;
+}
+
+.incoming_msg_img {
+    display: inline-block;
+    width: 6%;
+}
+
+.received_msg {
+    display: inline-block;
+    padding: 0 0 0 10px;
+    vertical-align: top;
+    width: 92%;
+}
+
+.received_withd_msg p {
+    background: #ebebeb none repeat scroll 0 0;
+    border-radius: 3px;
+    color: #646464;
+    font-size: 14px;
+    margin: 0;
+    padding: 5px 10px 5px 12px;
+    width: 100%;
+}
+
+.time_date {
+    color: #747474;
+    display: block;
+    font-size: 12px;
+    margin: 8px 0 0;
+}
+
+.received_withd_msg {
+    width: 57%;
+}
+
+.mesgs {
+    float: left;
+    padding: 30px 15px 0 25px;
+    width: 60%;
+}
+
+.sent_msg p {
+    background: #05728f none repeat scroll 0 0;
+    border-radius: 3px;
+    font-size: 14px;
+    margin: 0;
+    color: #fff;
+    padding: 5px 10px 5px 12px;
+    width: 100%;
+}
+
+.outgoing_msg {
+    overflow: hidden;
+    margin: 26px 0 26px;
+}
+
+.sent_msg {
+    float: right;
+    width: 46%;
+}
+
+.input_msg_write input {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #4c4c4c;
+    font-size: 15px;
+    min-height: 48px;
+    width: 100%;
+}
+
+.type_msg {
+    border-top: 1px solid #c4c4c4;
+    position: relative;
+}
+
+.msg_send_btn {
+    background: #05728f none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    height: 33px;
+    position: absolute;
+    right: 0;
+    top: 11px;
+    width: 33px;
+}
+
+.messaging {
+    padding: 0 0 50px 0;
+
+}
+
+.text-center {
+    text-shadow: #464646 1px 1px 2px;
+}
+
+.msg_history {
+    height: 516px;
+    overflow-y: auto;
+    margin-top: 6%;
+}
+
+.create-group {
+    margin-top: 0%;
+    float: right;
+}
+
+#hidden {
+    visibility: hidden;
+}
+
+
+.absoluteform {
+    float: left;
+    position: absolute;
+    margin-left: 20px;
+    display: inline;
+}
+
+.logo {
+    height: 80px;
+    width: 82px;
+}
+
+.pagina-div{
+    text-align: center;
+    font-size: 40px;
+}
+
+.pagina-div-grupoclicado{
+    text-align: center;
+    margin-top: 24px;
+    font-size: 34px;
+}
+
+
+.paginas{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.site-logo {
+    border-radius: 50%;
+    float: left;
+    height: 48px;
+    width: 48px;
+}
+
+.tipos-container {
+    display: flex;
+    width: 25.8vw;
+    justify-content: space-around;
+}
+
+.groupname {
+    color: black;
+    float: left;
+}
+
+.groupmembers{
+    color: rgb(79, 61, 212); 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    margin-top: 20px; 
+    font-size: 21px; 
+    text-decoration: underline 1.8px;
+    float: right;
+}
+
+.mesgs{
+    padding-top: 1px;
+}

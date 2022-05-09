@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<%-include('includes/head.ejs')%>
+    <script>
+        let c = 0;
+        function showhidden() {
+            const element = document.getElementById('hidden')
+            if (c == 0) {
+                c = 1
+                element.style.visibility = "visible"
+            } else {
+                c = 0
+                element.style.visibility = "hidden"
+            }
+        }
+    </script>
+
+    <body>
+
+        <%-include('includes/navbar.ejs')%>
+            <div class="absoluteform"><input type="button" class="btn btn-success btn-div" onclick="showhidden();"
+                    value="Criar um Grupo">
+                <div class="hidden-form" id="hidden">
+                    <form action="/group/create" method="POST" id="hiddenform"> Nome do Grupo: <input type="text"
+                            name="nome" maxlength="20" required>&nbsp;<input type="submit" class="btn btn-success" value="+"></form>
+                </div>
+            </div>
+            <h2 class="choose-group">Grupos:</h2>
+            <br>
+            <br>
+            <br>
+
+            <table id="main-table">
+                <tr>
+                    <th>
+                        Nome
+                    </th>
+                    <th>
+                        Membros
+                    </th>
+                </tr>
+
+                <% membros.forEach(grupo=> { %>
+                    <tr>
+                        <td>
+                            <%=grupo.nome%>
+                        </td>
+                        <td>
+                            <%= grupo.participantes %>
+                        </td>
+                    </tr> 
+                    <%})%>
+            </table>
+            <br>
+            <div class="pagina-div">
+                <% for (let i = 1; i <= Math.ceil(total/5); i++) { %>
+                   <%if(page == i){%>
+                        <a class="page-selected"><%= i %><a>
+                    <%}else{%>
+                        <a class="pages" href="/group/?page=<%= i %>"><%= i %><a>
+                   <% }%>
+                </a>
+                <% } %>
+              </div>
+           
+            <footer>Desenvolvido por Pedro Henrique e João Pedro 4C | IFRS 2022</footer>
+    </body>
+
+</html>

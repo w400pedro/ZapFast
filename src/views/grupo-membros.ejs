@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<%-include('includes/head.ejs')%>
+<%-include('includes/navbar.ejs')%>
+<%if(usercargo == 3){%>
+    <script>
+        let c = 0;
+        function showhidden() {
+            const element = document.getElementById('hidden')
+            if (c == 0) {
+                c = 1
+                element.style.visibility = "visible"
+            } else {
+                c = 0
+                element.style.visibility = "hidden"
+            }
+        }
+    </script>
+    <body>
+        <a href="/group/<%=grupo.id%>/delete/" role="button" class="btn btn-danger btn-delete"  onclick="return confirm('Deseja mesmo excluir esse grupo?');">Excluir Grupo</a>
+            <div class="absoluteform"><input type="button" class="btn btn-success btn-div" onclick="showhidden();"
+                    value="Adicionar um usuário"> <h3 class="mensagemh3"><%if(typeof msg != 'undefined'){%> <%=msg%> <%}%></h3>
+                <div class="hidden-form" id="hidden">
+                    <form action="/group/<%=grupo.id%>/add" method="POST" id="hiddenform"> Email do usuário: <input type="email"
+                            name="email" required> <br> <div class="tipos-container"> Leitor: <input required  type="radio" name="tipouser" value="1" > Escritor: <input type="radio" name="tipouser" value="2"> <input type="submit" class="btn btn-success" value="+"></div></form>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <%  }else {%>
+            <a href="exit" role="button" class="btn btn-danger btn-exit" onclick="return confirm('Deseja mesmo sair desse grupo?');"
+                type="button" class="btn btn-danger btn-enter">Sair do Grupo</a>
+                <%}%>   
+            <br>
+            <br>
+            <br>
+
+    <table id="main-table">
+    <tr>
+        <th colspan="4">Membros do <%=grupo.nome%></th>
+        </tr>
+        <%if(usercargo == 3){%>
+        <th>Remover</th> <%  }%>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Cargo</th>
+    <% membros.forEach(membro=> { %>
+        <tr>
+        <%if(usercargo == 3){%>
+            <td>
+                <%if(logado.id != membro.id){%>
+                <a href="remove/<%=membro.id%>" role="button" class="btn btn-danger">Remover do Grupo</a>
+                <%}%>
+            </td>
+        
+      <%  }%>
+    <td>
+    <%=membro.nome%>
+    </td>
+    <td>
+        <%=membro.email%>
+        </td>
+
+        <td>
+            <%=membro.tipon%>
+            </td>
+        <%})%>
+    </tr>
+</table>
+    <h2></h2>
+    </body>
+    </html>
